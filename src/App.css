@@ -1,0 +1,47 @@
+/* Global CSS Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    background-color: #121212;
+}
+
+/* Page container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Page content */
+.page-content {
+
+}
+
+/* Make first page-container have a background color of white */
+.page-container:first-child {
+    background-color: white;
+}
+
+.page-header {
+    color: white;
+    font-size: 40px;
+}
+
+.page-body {
+    color: white;
+}
+
+.social-icon a {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon a {
+    color: #7DD7F2;
+}

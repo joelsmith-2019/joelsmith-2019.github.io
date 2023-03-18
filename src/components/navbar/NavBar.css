@@ -1,0 +1,31 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid #e64919;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.n-link {
+    text-decoration: none;
+    color: white;
+    margin: 3px 8px;
+    font-size: 20px;
+}
+
+.n-link:hover {
+    color: #FFAB91;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%) brightness(1000%);
+}
