@@ -27,11 +27,17 @@ export default function Project(props) {
         <div className="project d-flex justify-content-evenly">
 
             {/* Left column of project details */}
-            <div className="project-left d-flex flex-column justify-content-between align-items-center">
-                {/* Project date */}
-                <span>{startDate}</span>
-                <span className="vert h-100 my-3" style={{borderRight: '1px solid #ccc'}}></span>
-                <span>{endDate}</span>
+            <div className="project-left">
+
+                <div className="project-date h-100">
+
+                    <div className="d-flex flex-column justify-content-center align-items-center h-100">
+
+                        <span className="text-center">{startDate}</span>
+                        <span className="vert h-100 my-3" style={{ borderRight: '1px solid #ccc' }}></span>
+                        <span className="text-center">{endDate}</span>
+                    </div>
+                </div>
             </div>
 
 
@@ -41,7 +47,7 @@ export default function Project(props) {
                 {/* Project header (title, subtitle & role) */}
                 <div className="project-header">
                     <h4>{title}</h4>
-                    <h5>{subtitle}</h5>
+                    {/* <h5>{subtitle}</h5> */}
                     <p>{role}</p>
                 </div>
 
@@ -57,9 +63,35 @@ export default function Project(props) {
 
                     {/* Extra opptional links */}
                     <div className="d-flex justify-content-evenly align-items-center">
-                        {github && <div><a href={github}>Github</a></div>}
-                        {website && <div><a href={website}>Website</a></div>}
-                        {demo && <div><a href={demo}>Demo</a></div>}
+                        {github &&
+                            <div className="social-icon">
+                                <a href={github} target="_blank">
+                                    {/* Github icon */}
+                                    <i className="fa-brands fa-github fa-2x"></i>
+                                </a>
+                            </div>
+                        }
+
+                        {/* Website link */}
+                        {website &&
+                            <div className="social-icon">
+                                <a href={website} target="_blank">
+                                    {/* Website icon */}
+                                    <i className="fa-solid fa-globe fa-2x"></i>
+                                </a>
+                            </div>
+                        }
+
+
+                        {/* Demo link */}
+                        {demo &&
+                            <div className="social-icon">
+                                <a href={demo} target="_blank">
+                                    {/* Demo icon */}
+                                    <i className="fa-solid fa-tv fa-2x"></i>
+                                </a>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>

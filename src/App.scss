@@ -107,17 +107,21 @@ body {
 }
 
 /* Social Icon Link Styles */
-.social-icon a {
-    aspect-ratio: 1/1;
-    color: $primary-variant;
-    transition: color 0.2s ease-in-out;
+.social-icon {
+
+    a {
+        aspect-ratio: 1/1;
+        text-decoration: non;
+        color: $primary-variant;
+        transition: color 0.2s ease-in-out;
+    
+        &:hover {
+            color: $primary;
+        }    
+    }
 }
 
-.social-icon a:hover {
-    color: $primary;
-}
-
-// Arrow buttons
+// Arrow buttons (forward user to next page)
 .arrow-button {
     // Spacing above icon
     margin-top: 4vh;
