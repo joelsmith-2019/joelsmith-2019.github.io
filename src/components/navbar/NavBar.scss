@@ -1,6 +1,8 @@
+@use '../../App.scss';
+
 .navbar {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid #e64919;
+    background-color: App.$overlay-color;
+    border-bottom: 2px solid App.$primary;
     position: fixed;
     top: 0;
     width: 100%;
@@ -9,13 +11,13 @@
 
 .n-link {
     text-decoration: none;
-    color: white;
-    margin: 3px 8px;
+    color: App.$default-color;
+    margin: 3px 10px;
     font-size: 20px;
 }
 
 .n-link:hover {
-    color: #FFAB91;
+    color: App.$primary;
 }
 
 .navbar-toggler:focus {

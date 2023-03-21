@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
 import Home from './components/home/Home';
@@ -11,11 +11,15 @@ function App() {
   return (
     <>
       <NavBar />
-      <Home />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
+      
+      <div className="pages">
+        <Home />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+      </div>
+
       <Contact />
     </>
   );

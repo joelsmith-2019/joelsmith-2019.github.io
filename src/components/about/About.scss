@@ -1,0 +1,13 @@
+@use '../../App';
+
+.profile-picture {
+
+    max-width: 250px;
+    min-width: 100px;
+    
+    img {
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid App.$primary;
+    }
+}

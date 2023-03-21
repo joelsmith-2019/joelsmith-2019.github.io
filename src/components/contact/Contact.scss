@@ -1,0 +1,15 @@
+@use '../../App';
+
+#contact {
+    padding: 2vh 0;
+    background-color: App.$overlay-color;
+    border: 1px solid App.$overlay-color;
+    color: App.$default-color;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        border: 1px solid App.$primary;
+    }
+}

@@ -1,0 +1,149 @@
+// Backgrounds
+$background: #313131;
+$background-surface: #121212;
+$background-error: #CF6679;
+$background-card-1: rgba(255, 255, 255, 0.15);
+$background-card-2: rgba(255, 255, 255, 0.20);
+
+// Colors
+$default-color: white;
+$overlay-color: rgba(31, 31, 31, 0.95);
+
+$primary: #FFAB91;
+$primary-variant: #E64919;
+$secondary: #7DD7F2;
+
+* {
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    background-color: $background;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+// Smallest screens
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+// Medium screens
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+}
+
+// Max screens
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+}
+
+// Alternating angled backgrounds
+// .pages {
+//     .page-container:nth-child(odd) {
+//         &:first-child {
+//             clip-path: polygon(0 0%, 100% 0%, 100% 96%, 0% 100%);
+//         }
+
+//         &:last-child {
+//             clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);
+//         }
+
+//         clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+//         background-color: $background-card-2;
+//     }
+
+//     .page-container:nth-child(even) {
+//         clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 96%);
+//         background-color: $background-card-1;
+//     }
+// }
+
+/* Page container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* border-bottom: 3px solid rgba(255, 255, 255, 0.05); */
+}
+
+/* Page content */
+.page-content {
+    // No styles
+}
+
+.page-header {
+    color: $default-color;
+    margin-bottom: 1rem;
+
+    h1 {
+        color: $primary;
+    }
+}
+
+.page-body {
+    color: $default-color;
+}
+
+/* Social Icon Link Styles */
+.social-icon a {
+    aspect-ratio: 1/1;
+    color: $primary-variant;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-icon a:hover {
+    color: $primary;
+}
+
+// Arrow buttons
+.arrow-button {
+    // Spacing above icon
+    margin-top: 4vh;
+
+    // Link
+    a {
+        display: inline-block;
+        text-decoration: none;
+
+        span {
+            color: $default-color;
+
+            display: inline-block;
+            padding: 20px;
+            font-size: 20px;
+
+            border: 2px solid $default-color;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                padding: 30px;
+                color: $primary;
+                border: 2px solid $primary;
+                background-color: rgba($primary, 0.05);
+            }
+        }
+    }
+}
