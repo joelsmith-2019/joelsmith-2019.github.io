@@ -38,7 +38,7 @@ export default function Project(props) {
 
     // Project date (horizontal)
     let dateHorizontal = <>
-        <div className="project-date-hr col-12 col-md-2 d-block d-sm-block d-md-none mb-3">
+        <div className="project-date-hr col-12 col-md-3 d-block d-sm-block d-md-none mb-3">
             <div className="w-100">
                 <div className="row justify-content-between align-items-center">
                     <span className="col text-start">{startDate}</span>
@@ -51,7 +51,7 @@ export default function Project(props) {
 
     // Project details
     let details = <>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-8">
             {/* Project header (title, subtitle & role) */}
             <div className="project-header mb-3">
                 <span className="project-role mb-1">{role} at</span>
@@ -70,37 +70,41 @@ export default function Project(props) {
                 </div>
 
                 {/* Extra opptional links */}
-                <div className="d-flex justify-content-evenly align-items-center">
-                    {github &&
-                        <div className="social-icon">
-                            <a href={github} target="_blank">
-                                {/* Github icon */}
-                                <i className="fa-brands fa-github fa-2x"></i>
-                            </a>
-                        </div>
-                    }
+                {(github || website || demo) &&
+                    <div className="project-links">
+                        <div className="d-flex justify-content-evenly align-items-center">
+                            {github &&
+                                <div className="social-icon">
+                                    <a href={github} target="_blank">
+                                        {/* Github icon */}
+                                        <i className="fa-brands fa-github fa-2x"></i>
+                                    </a>
+                                </div>
+                            }
 
-                    {/* Website link */}
-                    {website &&
-                        <div className="social-icon">
-                            <a href={website} target="_blank">
-                                {/* Website icon */}
-                                <i className="fa-solid fa-globe fa-2x"></i>
-                            </a>
-                        </div>
-                    }
+                            {/* Website link */}
+                            {website &&
+                                <div className="social-icon">
+                                    <a href={website} target="_blank">
+                                        {/* Website icon */}
+                                        <i className="fa-solid fa-globe fa-2x"></i>
+                                    </a>
+                                </div>
+                            }
 
 
-                    {/* Demo link */}
-                    {demo &&
-                        <div className="social-icon">
-                            <a href={demo} target="_blank">
-                                {/* Demo icon */}
-                                <i className="fa-solid fa-tv fa-2x"></i>
-                            </a>
+                            {/* Demo link */}
+                            {demo &&
+                                <div className="social-icon">
+                                    <a href={demo} target="_blank">
+                                        {/* Demo icon */}
+                                        <i className="fa-solid fa-tv fa-2x"></i>
+                                    </a>
+                                </div>
+                            }
                         </div>
-                    }
-                </div>
+                    </div>
+                }
             </div>
         </div>
     </>;
