@@ -1,7 +1,7 @@
 @use '../../App.scss';
 
 .navbar {
-    background-color: App.$overlay-color;
+    background-color: App.$background-overlay;
     border-bottom: 2px solid App.$primary;
     position: fixed;
     top: 0;

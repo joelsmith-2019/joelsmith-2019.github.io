@@ -2,6 +2,7 @@ import Project from "../project/Project";
 
 function Experience() {
 
+    let index = 1;
     let arr = ["I did this awesome thing", "I did this other awesome thing", "I even did this other awesome thing"];
 
     return (
@@ -16,12 +17,26 @@ function Experience() {
 
                 <div className="page-body">
                     <Project
+                        index={index}
                         startDate="October 2021"
                         endDate="October 2022"
                         title="Craft Economy"
-                        subtitle="Crytocurrency within a Mincraft Server"
+                        description="A cryptocurrency company which integrated blockchain technology within Minecraft servers."
                         role="Software Developer"
-                        description={arr}
+                        points={arr}
+                        github="https://github.com/joelsmith-2019"
+                        website="https://github.com/joelsmith-2019"
+                        demo="https://github.com/joelsmith-2019"
+                    ></Project>
+
+                    <Project
+                        index={++index}
+                        startDate="October 2021"
+                        endDate="October 2022"
+                        title="Craft Economy"
+                        description="A cryptocurrency company which integrated blockchain technology within Minecraft servers."
+                        role="Software Developer"
+                        points={arr}
                         github="https://github.com/joelsmith-2019"
                         website="https://github.com/joelsmith-2019"
                         demo="https://github.com/joelsmith-2019"

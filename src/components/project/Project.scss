@@ -1,0 +1,42 @@
+@use '../../App';
+
+.project {
+
+    padding: 20px 0px;
+    margin: 60px 0px;
+
+    // background-color: rgba(App.$background-surface, 0.35);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: App.$background-overlay;
+    }
+
+    .project-date-hr {
+        color: App.$low-emphasis-color;
+        font-style: italic;
+    }
+
+    .project-role {
+        text-transform: uppercase;
+    }
+
+    .project-title {
+        font-weight: bold;
+        color: App.$primary;
+    }
+
+    .project-description {
+        font-weight: 300;
+        color: App.$low-emphasis-color;
+    }
+    
+    .project-points {
+        margin: 30px;
+
+        ul {
+            padding: 0;
+        }
+    }
+}

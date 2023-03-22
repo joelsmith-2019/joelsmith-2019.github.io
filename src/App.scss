@@ -2,12 +2,13 @@
 $background: #313131;
 $background-surface: #121212;
 $background-error: #CF6679;
-$background-card-1: rgba(255, 255, 255, 0.15);
-$background-card-2: rgba(255, 255, 255, 0.20);
+$background-card-1: rgba(255, 255, 255, 0.05);
+$background-card-2: rgba(255, 255, 255, 0.10);
+$background-overlay: rgba(31, 31, 31, 0.95);
 
 // Colors
 $default-color: white;
-$overlay-color: rgba(31, 31, 31, 0.95);
+$low-emphasis-color: rgba(255, 255, 255, 0.65);
 
 $primary: #FFAB91;
 $primary-variant: #E64919;
@@ -57,7 +58,6 @@ body {
     }
 }
 
-// Alternating angled backgrounds
 // .pages {
 //     .page-container:nth-child(odd) {
 //         &:first-child {
