@@ -15,7 +15,7 @@ export default function Experience() {
                 "Performed code reviews for the geographically dispersed team, improving both code quality and efficiency",
                 "Utilized Java, MongoDB, Redis, Git/GitLab and Python to integrate cryptocurrency into Minecraft"
             ],
-            skills: "TODO",
+            skills: ["Java", "Maven", "MongoDB", "Redis", "Git", "GitLab", "Python", "Blockchains"],
             github: "a",
             website: "a",
             demo: "a",
@@ -31,7 +31,7 @@ export default function Experience() {
                 "Led a small team of geographically distributed staff members, providing guidance and oversight to ensure effective operation of the company",
                 "Managed advertisement campaigns and partnerships with influencers, driving increased traffic and revenue"
             ],
-            skills: "TODO",
+            skills: ["Java", "Maven", "MySQL", "Redis", "Linux"],
             github: "",
             website: "",
             demo: "",

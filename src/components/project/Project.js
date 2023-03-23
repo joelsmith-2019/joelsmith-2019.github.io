@@ -15,7 +15,10 @@ export default function Project(props) {
     let description = props.description;
     let role = props.role;
     const points = props.points.map((line) => {
-        return <li>{line}</li>;
+        return <li className="project-point">{line}</li>;
+    });
+    const skills = props.skills.map((skill) => {
+        return <span className="project-skill">{skill}</span>;
     });
 
     // Links (optional)
@@ -54,7 +57,49 @@ export default function Project(props) {
         <div className="col-12 col-md-8">
             {/* Project header (title, subtitle & role) */}
             <div className="project-header mb-3">
-                <span className="project-role mb-1">{role} at</span>
+
+                <div className="d-flex justify-content-between align-items-center">
+                    {role && <span className="project-role mb-1">{role} at</span>}
+
+                    {/* Extra opptional links */}
+                    {(github || website || demo) &&
+                        <div className="project-links">
+                            <div className="d-flex justify-content-evenly align-items-center">
+                                {github &&
+                                    <div className="social-icon">
+                                        <a href={github} target="_blank">
+                                            {/* Github icon */}
+                                            <i className="fa-brands fa-github fa-2x"></i>
+                                        </a>
+                                    </div>
+                                }
+
+                                {/* Website link */}
+                                {website &&
+                                    <div className="social-icon">
+                                        <a href={website} target="_blank">
+                                            {/* Website icon */}
+                                            <i className="fa-solid fa-globe fa-2x"></i>
+                                        </a>
+                                    </div>
+                                }
+
+
+                                {/* Demo link */}
+                                {demo &&
+                                    <div className="social-icon">
+                                        <a href={demo} target="_blank">
+                                            {/* Demo icon */}
+                                            <i className="fa-solid fa-tv fa-2x"></i>
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+
+
                 <h2 className="project-title mb-0">{title}</h2>
                 <span className="project-description">{description}</span>
             </div>
@@ -69,42 +114,10 @@ export default function Project(props) {
                     </ul>
                 </div>
 
-                {/* Extra opptional links */}
-                {(github || website || demo) &&
-                    <div className="project-links">
-                        <div className="d-flex justify-content-evenly align-items-center">
-                            {github &&
-                                <div className="social-icon">
-                                    <a href={github} target="_blank">
-                                        {/* Github icon */}
-                                        <i className="fa-brands fa-github fa-2x"></i>
-                                    </a>
-                                </div>
-                            }
-
-                            {/* Website link */}
-                            {website &&
-                                <div className="social-icon">
-                                    <a href={website} target="_blank">
-                                        {/* Website icon */}
-                                        <i className="fa-solid fa-globe fa-2x"></i>
-                                    </a>
-                                </div>
-                            }
-
-
-                            {/* Demo link */}
-                            {demo &&
-                                <div className="social-icon">
-                                    <a href={demo} target="_blank">
-                                        {/* Demo icon */}
-                                        <i className="fa-solid fa-tv fa-2x"></i>
-                                    </a>
-                                </div>
-                            }
-                        </div>
-                    </div>
-                }
+                {/* Skills */}
+                <div className="project-skills d-flex flex-wrap">
+                    {skills}
+                </div>
             </div>
         </div>
     </>;

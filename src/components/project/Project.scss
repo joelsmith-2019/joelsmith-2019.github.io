@@ -31,7 +31,7 @@
         font-weight: 300;
         color: App.$low-emphasis-color;
     }
-    
+
     .project-points {
         margin: 0px 20px;
 
@@ -40,7 +40,21 @@
         }
     }
 
+    .project-skill {
+        display: inline-block;
+        padding: 2px 5px;
+        margin-right: 10px;
+        color: App.$default-color;
+
+        outline: 1px solid App.$primary;
+        border-radius: 5px;
+        background-color: rgba(App.$primary-variant, 0.65);
+    }
+
     .project-links {
-        margin-top: 30px;
+
+        .social-icon {
+            margin-right: 20px;
+        }
     }
 }
