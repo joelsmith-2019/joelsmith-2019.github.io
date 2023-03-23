@@ -14,12 +14,15 @@ export default function Project(props) {
     let title = props.title;
     let description = props.description;
     let role = props.role;
+    let isSideProject = props.isSideProject;
     const points = props.points.map((line) => {
         return <li className="project-point">{line}</li>;
     });
     const skills = props.skills.map((skill) => {
-        return <span className="project-skill">{skill}</span>;
+        return <span className="skill">{skill}</span>;
     });
+
+    console.log('IsSideProject:' + isSideProject);
 
     // Links (optional)
     let github = props.github;
@@ -55,56 +58,66 @@ export default function Project(props) {
     // Project details
     let details = <>
         <div className="col-12 col-md-8">
-            {/* Project header (title, subtitle & role) */}
+            {/* Project header (role, links, title, desc) */}
             <div className="project-header mb-3">
 
-                <div className="d-flex justify-content-between align-items-center">
-                    {role && <span className="project-role mb-1">{role} at</span>}
+                {/* Role & Links */}
+                <div className="row justify-content-between align-items-center">
+                    {/* Role at Project */}
+                    <div className="col">
+                        {role &&
+                            <span className="project-role mb-1">
+                                {role} {isSideProject && <span>of</span>}{!isSideProject && <span>at</span>}
+                            </span>
+                        }
+                    </div>
 
-                    {/* Extra opptional links */}
-                    {(github || website || demo) &&
-                        <div className="project-links">
-                            <div className="d-flex justify-content-evenly align-items-center">
-                                {github &&
-                                    <div className="social-icon">
-                                        <a href={github} target="_blank">
-                                            {/* Github icon */}
-                                            <i className="fa-brands fa-github fa-2x"></i>
-                                        </a>
-                                    </div>
-                                }
+                    <div className="col d-flex justify-content-end">
+                        {/* Extra opptional links */}
+                        {(github || website || demo) &&
+                            <div className="project-links">
+                                <div className="d-flex justify-content-evenly align-items-center p-0">
+                                    {github &&
+                                        <div className="social-icon">
+                                            <a href={github} target="_blank">
+                                                {/* Github icon */}
+                                                <i className="fa-brands fa-github fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    }
 
-                                {/* Website link */}
-                                {website &&
-                                    <div className="social-icon">
-                                        <a href={website} target="_blank">
-                                            {/* Website icon */}
-                                            <i className="fa-solid fa-globe fa-2x"></i>
-                                        </a>
-                                    </div>
-                                }
+                                    {/* Website link */}
+                                    {website &&
+                                        <div className="social-icon">
+                                            <a href={website} target="_blank">
+                                                {/* Website icon */}
+                                                <i className="fa-solid fa-globe fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    }
 
 
-                                {/* Demo link */}
-                                {demo &&
-                                    <div className="social-icon">
-                                        <a href={demo} target="_blank">
-                                            {/* Demo icon */}
-                                            <i className="fa-solid fa-tv fa-2x"></i>
-                                        </a>
-                                    </div>
-                                }
+                                    {/* Demo link */}
+                                    {demo &&
+                                        <div className="social-icon">
+                                            <a href={demo} target="_blank">
+                                                {/* Demo icon */}
+                                                <i className="fa-solid fa-tv fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    }
+                                </div>
                             </div>
-                        </div>
-                    }
+                        }
+                    </div>
                 </div>
 
-
+                {/* Title & Description */}
                 <h2 className="project-title mb-0">{title}</h2>
                 <span className="project-description">{description}</span>
             </div>
 
-            {/* Project body */}
+            {/* Project body (points & skills) */}
             <div className="project-body">
 
                 {/* Bullet points */}

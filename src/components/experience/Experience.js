@@ -10,15 +10,16 @@ export default function Experience() {
             title: "Craft Economy",
             description: "A cryptocurrency company which integrated blockchain technology within Minecraft servers.",
             role: "Software Developer",
+            isSideProject: false,
             points: [
                 "Designed, developed, and maintained 14 plugins from concept to completion, showcasing an ability to create effective solutions for complex problems",
                 "Performed code reviews for the geographically dispersed team, improving both code quality and efficiency",
                 "Utilized Java, MongoDB, Redis, Git/GitLab and Python to integrate cryptocurrency into Minecraft"
             ],
             skills: ["Java", "Maven", "MongoDB", "Redis", "Git", "GitLab", "Python", "Blockchains"],
-            github: "a",
-            website: "a",
-            demo: "a",
+            github: "",
+            website: "",
+            demo: "",
         },
         {
             startDate: "December 2017",
@@ -26,6 +27,7 @@ export default function Experience() {
             title: "Joel's Enterprises, LLC",
             description: "A small business which ran Minecraft servers and sold plugin development services.",
             role: "Owner",
+            isSideProject: false,
             points: [
                 "Created a small, for-profit business running Minecraft servers and selling modifications, serving thousands of customers",
                 "Led a small team of geographically distributed staff members, providing guidance and oversight to ensure effective operation of the company",
@@ -36,7 +38,7 @@ export default function Experience() {
             website: "",
             demo: "",
         }
-    ]
+    ];
 
     // Define the projects RJX
     let index = 1;
@@ -49,6 +51,7 @@ export default function Experience() {
                 title={project.title}
                 description={project.description}
                 role={project.role}
+                isSideProject={project.isSideProject}
                 points={project.points}
                 skills={project.skills}
                 github={project.github}
@@ -66,7 +69,7 @@ export default function Experience() {
 
                 <div className="page-header">
                     <h1>Experience</h1>
-                    <p>Below is my latest software development work experience.</p>
+                    <p>Below are my latest software development work experiences.</p>
                     <span className="page-header-line"></span>
                 </div>
 

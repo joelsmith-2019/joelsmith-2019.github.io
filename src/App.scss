@@ -109,16 +109,30 @@ body {
 
 /* Social Icon Link Styles */
 .social-icon {
+    // Center link in parent
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    // Link styles
     a {
-        aspect-ratio: 1/1;
-        text-decoration: non;
+        // Link styles
+        display: inline-block;
+        text-decoration: none;
         color: $primary-variant;
         transition: color 0.2s ease-in-out;
-    
+
+        // Hover effect
         &:hover {
             color: $primary;
-        }    
+        }
+
+        // Align font awesome icons in link
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -151,4 +165,16 @@ body {
             }
         }
     }
+}
+
+// Skill styles
+.skill {
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 10px 10px 0 0;
+    color: $default-color;
+
+    outline: 1px solid $primary;
+    border-radius: 5px;
+    background-color: rgba($primary-variant, 0.65);
 }
