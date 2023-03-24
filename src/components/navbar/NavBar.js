@@ -6,7 +6,15 @@ function NavBar() {
             <div className="container-sm">
 
                 {/* Joel Smith  */}
-                <a className="n-link ps-0" href="#home">Joel Smith</a>
+                <a className="n-link ps-0" href="#home">
+
+                    <div className="logo-container">
+
+                        <span className="logo">JS</span>
+
+                    </div>
+
+                </a>
 
                 {/* Toggle Dropdown */}
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -30,6 +38,11 @@ function NavBar() {
                         </li>
                         <li>
                             <a className="n-link" href="#contact">Contact</a>
+                        </li>
+                        <li className="pt-2 pt-md-0">
+                            <a className="n-link" href="https://www.resumonk.com/gggOgzcl9BlZawEA2YtJdw" target="_blank" rel="noopener noreferrer">
+                                <span id="resume">Resume</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
