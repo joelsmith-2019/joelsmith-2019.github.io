@@ -47,6 +47,7 @@ export default function Projects() {
     let projectRJX = projects.map((project) => {
         return (
             <Project
+                key={index}
                 index={index++}
                 startDate={project.startDate}
                 endDate={project.endDate}

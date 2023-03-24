@@ -31,21 +31,21 @@ function Contact() {
 
                             {/* Linked In Icon */}
                             <div className="social-icon">
-                                <a href="https://linkedin.com/in/joelsmith-2019" target="_blank">
+                                <a href="https://linkedin.com/in/joelsmith-2019" target="_blank" rel="noopener noreferrer">
                                     <i className="fa-brands fa-linkedin fa-4x"></i>
                                 </a>
                             </div>
 
                             {/* GitHub Icon */}
                             <div className="social-icon mx-3">
-                                <a href="https://github.com/joelsmith-2019" target="_blank">
+                                <a href="https://github.com/joelsmith-2019" target="_blank" rel="noopener noreferrer">
                                     <i className="fa-brands fa-github fa-4x"></i>
                                 </a>
                             </div>
 
                             {/* Email Icon */}
                             <div className="social-icon">
-                                <a href="mailto:joelsmith.2019@gmail.com" target="_blank">
+                                <a href="mailto:joelsmith.2019@gmail.com" target="_blank" rel="noopener noreferrer">
                                     <i className="fa-solid fa-envelope fa-4x"></i>
                                 </a>
                             </div>

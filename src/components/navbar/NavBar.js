@@ -1,19 +1,16 @@
 import './NavBar.scss';
 
 function NavBar() {
+
     return (
         <nav id="navbar" className="navbar navbar-expand-md">
             <div className="container-sm">
 
-                {/* Joel Smith  */}
+                {/* JS Logo  */}
                 <a className="n-link ps-0" href="#home">
-
                     <div className="logo-container">
-
                         <span className="logo">JS</span>
-
                     </div>
-
                 </a>
 
                 {/* Toggle Dropdown */}

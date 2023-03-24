@@ -21,13 +21,13 @@ function About() {
                                 Hello, my name is Joel Smith and I am a software developer. Ever since my introduction
                                 to programming at the age of 12, I have been fascinated with software and technology.
                                 I enjoy solving problems and making life easier through code. Whether it's building a
-                                back-end API or developing an intuitive website, I enjoy the process of creating beneficial
+                                back-end API or developing an intuitive website, I am passionate about creating beneficial
                                 software.
                             </p>
                             <p>
                                 Some of my favorite programming languages and technologies that I have been recently working
-                                with include Java, TypeScript, and Angular. Besides programming, I enjoy researching and getting
-                                involved in Cryptocurrency.
+                                with include Java, TypeScript, and Angular. Besides programming, I spend my free time 
+                                researching and getting involved in cryptocurrency.
                             </p>
                             <p>
                                 Actively, I am seeking an opportunity to not only gain hands-on experience in the software industry

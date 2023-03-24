@@ -73,7 +73,7 @@ body {
     // Section container
     .section-container {
         @extend %section-container-styles;
-        padding-top: 5vh;
+        padding-top: 7vh;
         margin-bottom: 25vh;
 
         .section-content {
@@ -175,12 +175,12 @@ body {
 
 // Skill styles
 .skill {
-    display: inline-block;
+    display: block;
     padding: 2px 5px;
     margin: 10px 10px 0 0;
     color: $default-color;
 
-    outline: 2px solid $primary;
+    border: 2px solid $primary;
     border-radius: 5px;
     background-color: rgba($primary-variant, 0.65);
 }

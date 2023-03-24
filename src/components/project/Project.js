@@ -15,14 +15,12 @@ export default function Project(props) {
     let description = props.description;
     let role = props.role;
     let isSideProject = props.isSideProject;
-    const points = props.points.map((line) => {
-        return <li className="project-point">{line}</li>;
+    const points = props.points.map((line, index) => {
+        return <li className="project-point" key={index}>{line}</li>;
     });
-    const skills = props.skills.map((skill) => {
-        return <span className="skill">{skill}</span>;
+    const skills = props.skills.map((skill, index) => {
+        return <span className="skill" key={index}>{skill}</span>;
     });
-
-    console.log('IsSideProject:' + isSideProject);
 
     // Links (optional)
     let github = props.github;
