@@ -1,0 +1,18 @@
+@use '../../App';
+
+#skills {
+
+    .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        .skill {
+            font-size: 20px;
+        }
+    }
+
+    .section-body {
+        margin-top: 40px;
+    }
+}
