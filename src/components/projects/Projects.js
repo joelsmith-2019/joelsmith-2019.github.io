@@ -17,7 +17,7 @@ export default function Projects() {
                 "Programming with Java, Spring Boot, Rust, Typescript, Express, and Angular to develop back-end RESTful APIs and a front-end microservice",
                 "Utilizing GitHub for code management and Jira for progress management, ensuring a well-organized development process"
             ],
-            skills: ["Java", "Spring Boot", "Rust", "JavaScript", "TypeScript", "Express", "Angular", "Dapr", "Docker", "Kubernetes", "Jira", "AWS"],
+            skills: ["Java", "Spring Boot", "Rust", "JavaScript", "TypeScript", "Express", "Angular", "PostgreSQL", "MongoDB", "Dapr", "Docker", "Kubernetes", "Jira", "AWS"],
             github: "https://github.com/the-auction-games",
             website: "",
             demo: "",
@@ -65,17 +65,16 @@ export default function Projects() {
 
     // Return the experience page
     return (
-        <div id="projects" className="container-sm page-container">
+        <div id="projects" className="container-sm section-container">
 
-            <div className="page-content w-100">
+            <div className="section-content">
 
-                <div className="page-header">
+                <div className="section-header">
                     <h1>Projects</h1>
                     <p>Below are my latest side projects.</p>
-                    <span className="page-header-line"></span>
                 </div>
 
-                <div className="page-body">
+                <div className="section-body">
                     {projectRJX}
                 </div>
             </div>

@@ -79,7 +79,7 @@ export default function Project(props) {
                                 <div className="d-flex justify-content-evenly align-items-center p-0">
                                     {github &&
                                         <div className="social-icon">
-                                            <a href={github} target="_blank">
+                                            <a href={github} target="_blank" rel="noopener noreferrer">
                                                 {/* Github icon */}
                                                 <i className="fa-brands fa-github fa-2x"></i>
                                             </a>
@@ -89,7 +89,7 @@ export default function Project(props) {
                                     {/* Website link */}
                                     {website &&
                                         <div className="social-icon">
-                                            <a href={website} target="_blank">
+                                            <a href={website} target="_blank" rel="noopener noreferrer">
                                                 {/* Website icon */}
                                                 <i className="fa-solid fa-globe fa-2x"></i>
                                             </a>
@@ -100,7 +100,7 @@ export default function Project(props) {
                                     {/* Demo link */}
                                     {demo &&
                                         <div className="social-icon">
-                                            <a href={demo} target="_blank">
+                                            <a href={demo} target="_blank" rel="noopener noreferrer">
                                                 {/* Demo icon */}
                                                 <i className="fa-solid fa-tv fa-2x"></i>
                                             </a>
@@ -140,7 +140,7 @@ export default function Project(props) {
         <div className="project row justify-content-evenly">
 
             {/* Date on left, details on right */}
-            {index % 2 != 0 &&
+            {index % 2 !== 0 &&
                 <>
                     {dateVertical}
                     {dateHorizontal}
@@ -149,7 +149,7 @@ export default function Project(props) {
             }
 
             {/* Details on left, date on right */}
-            {index % 2 == 0 &&
+            {index % 2 === 0 &&
                 <>
                     {dateHorizontal}
                     {details}

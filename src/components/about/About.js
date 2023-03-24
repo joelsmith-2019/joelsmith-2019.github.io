@@ -3,29 +3,36 @@ import logo from '../../images/profile.jpg';
 
 function About() {
     return (
-        <div id="about" className="container-sm page-container">
+        <div id="about" className="container-sm section-container">
 
-            <div className="page-content">
+            <div className="section-content">
 
                 <div className="row">
 
                     {/* About Details */}
                     <div className="col-md-8">
 
-                        <div className="page-header">
-                            <h1>About Me</h1>
+                        <div className="section-header">
+                            <h1>About me</h1>
                         </div>
 
-                        <div className="page-body">
+                        <div className="section-body">
                             <p>
-                                Hello! My name is Joel Smith and I am a passionate software developer. Ever since the age of 12,
-                                I have fallen in love with computers and technology. This passion has led me to pursue a degree in
-                                Software Development at Grand Canyon University. I am currently in my final semester and will be
-                                graduating April 28, 2023.
+                                Hello, my name is Joel Smith and I am a software developer. Ever since my introduction
+                                to programming at the age of 12, I have been fascinated with software and technology.
+                                I enjoy solving problems and making life easier through code. Whether it's building a
+                                back-end API or developing an intuitive website, I enjoy the process of creating beneficial
+                                software.
                             </p>
                             <p>
-                                I am currently seeking an opportunity to not only gain hands-on experience in the software industry
+                                Some of my favorite programming languages and technologies that I have been recently working
+                                with include Java, TypeScript, and Angular. Besides programming, I enjoy researching and getting
+                                involved in Cryptocurrency.
+                            </p>
+                            <p>
+                                Actively, I am seeking an opportunity to not only gain hands-on experience in the software industry
                                 and expand upon my technical skillset, but to also provide meaningful value to a development team.
+                                Please feel free to contact me if you'd like to discuss potential collaboration or job opportunities.
                             </p>
                         </div>
 
@@ -33,25 +40,15 @@ function About() {
 
                     {/* Profile Picture */}
                     <div className="col-md-4">
-                        <div className="d-flex justify-content-center align-items-center h-100">
-                            <div className="profile-picture ">
-                                <img src={logo} alt="Profile" />
+                        <div className="section-photo h-100">
+                            <div className="d-flex justify-content-center align-items-center h-100">
+                                <div className="profile-picture ">
+                                    <img src={logo} alt="Profile" />
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-
-                <div className="d-flex justify-content-center align-items-center">
-                    <div className="arrow-button">
-                        <a href="#experience">
-                            <span>
-                                <i className="fa-solid fa-arrow-down me-3"></i>
-                                Experience
-                                <i className="fa-solid fa-arrow-down ms-3"></i>
-                            </span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>

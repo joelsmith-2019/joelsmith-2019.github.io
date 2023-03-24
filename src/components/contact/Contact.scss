@@ -2,14 +2,13 @@
 
 #contact {
     padding: 2vh 0;
-    background-color: App.$background-overlay;
-    border: 1px solid App.$background-overlay;
     color: App.$default-color;
-    margin-bottom: 40px;
+    background-color: App.$background-overlay;
+    border: 2px solid App.$background-overlay;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
 
     &:hover {
-        border: 1px solid App.$primary;
+        border: 2px solid App.$primary;
     }
 }

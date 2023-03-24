@@ -59,55 +59,61 @@ body {
     }
 }
 
-// .pages {
-//     .page-container:nth-child(odd) {
-//         &:first-child {
-//             clip-path: polygon(0 0%, 100% 0%, 100% 96%, 0% 100%);
-//         }
+// Sections
+.sections {
 
-//         &:last-child {
-//             clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);
-//         }
+    // Standard section container styles
+    %section-container-styles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-//         clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-//         background-color: $background-card-2;
-//     }
+    // Section container
+    .section-container {
+        @extend %section-container-styles;
+        padding-top: 5vh;
+        margin-bottom: 25vh;
 
-//     .page-container:nth-child(even) {
-//         clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 96%);
-//         background-color: $background-card-1;
-//     }
-// }
+        .section-content {
+            width: 100%;
+        }
+    }
 
-/* Page container */
-.page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* border-bottom: 3px solid rgba(255, 255, 255, 0.05); */
-}
+    // Full screen section
+    .section-container-full {
+        @extend %section-container-styles;
+        min-height: 100vh;
+    }
 
-/* Page content */
-.page-content {
-    // No styles
-}
+    // section content
+    .section-content {
+        // No styles
+    }
 
-.page-header {
-    color: $default-color;
-    margin-bottom: 1rem;
+    // Section header
+    .section-header {
+        color: $default-color;
+        margin-bottom: 1rem;
 
-    h1 {
-        color: $primary;
+        h1 {
+            color: $primary;
+        }
+    }
+
+    // Section body
+    .section-body {
+        color: $default-color;
+    }
+
+    // Section photo
+    .section-photo {
+        // No styles
     }
 }
 
-.page-body {
-    color: $default-color;
-}
-
-/* Social Icon Link Styles */
+// Social Icon Link Styles
 .social-icon {
     // Center link in parent
     display: flex;
@@ -120,7 +126,7 @@ body {
         display: inline-block;
         text-decoration: none;
         color: $primary-variant;
-        transition: color 0.2s ease-in-out;
+        transition: color 0.3s ease-in-out;
 
         // Hover effect
         &:hover {
@@ -174,7 +180,7 @@ body {
     margin: 10px 10px 0 0;
     color: $default-color;
 
-    outline: 1px solid $primary;
+    outline: 2px solid $primary;
     border-radius: 5px;
     background-color: rgba($primary-variant, 0.65);
 }

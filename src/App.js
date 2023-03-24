@@ -6,21 +6,21 @@ import NavBar from "./components/navbar/NavBar";
 import Projects from './components/projects/Projects';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <>
       <NavBar />
-      
-      <div className="pages">
+      <div className="sections">
         <Home />
         <About />
         <Experience />
         <Projects />
         <Skills />
       </div>
-
       <Contact />
+      <Footer />
     </>
   );
 }

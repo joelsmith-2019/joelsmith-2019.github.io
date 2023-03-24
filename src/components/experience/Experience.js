@@ -63,17 +63,16 @@ export default function Experience() {
 
     // Return the experience page
     return (
-        <div id="experience" className="container-sm page-container">
+        <div id="experience" className="container-sm section-container">
 
-            <div className="page-content w-100">
+            <div className="section-content">
 
-                <div className="page-header">
+                <div className="section-header">
                     <h1>Experience</h1>
                     <p>Below are my latest software development work experiences.</p>
-                    <span className="page-header-line"></span>
                 </div>
 
-                <div className="page-body">
+                <div className="section-body">
                     {projectRJX}
                 </div>
             </div>

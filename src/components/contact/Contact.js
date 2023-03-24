@@ -9,7 +9,7 @@ function Contact() {
                 {/* Contact Me */}
                 <div className="row">
                     <div className="col text-center">
-                        <h1>Contact Me</h1>
+                        <h1>Contact me</h1>
                     </div>
                 </div>
 
