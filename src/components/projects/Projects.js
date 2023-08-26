@@ -6,7 +6,7 @@ export default function Projects() {
     let projects = [
         {
             startDate: "September 2022",
-            endDate: "Present",
+            endDate: "April 2023",
             title: "Senior Capstone Project",
             description: "An online auction application utilizing microservice architecture.",
             role: "Developer",
