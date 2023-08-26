@@ -37,7 +37,7 @@ function NavBar() {
                             <a className="n-link" href="#contact">Contact</a>
                         </li>
                         <li className="pt-2 pt-md-0">
-                            <a className="n-link" href="https://www.resumonk.com/gggOgzcl9BlZawEA2YtJdw" target="_blank" rel="noopener noreferrer">
+                            <a className="n-link" href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer">
                                 <span id="resume">Resume</span>
                             </a>
                         </li>
