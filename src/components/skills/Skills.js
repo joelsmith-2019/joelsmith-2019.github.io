@@ -15,19 +15,23 @@ export default function Skills() {
 
     // List of back-end skills
     let backSkills = [
-        "Git",
         "Java",
         "Maven",
         "Spring Boot",
+        "Golang",
+        "CosmosSDK",
+        "Rust",
+        "CosmWasm",
+        "Protobuf",
         "Node",
         "Express",
         "Python",
-        "Rust",
         "MongoDB",
         "SQL",
         "Redis",
         "Linux",
         "Docker",
+        "Kubernetes",
         "Dapr",
         "Microservices",
         "Blockchains",
@@ -36,9 +40,12 @@ export default function Skills() {
 
     // List of other skills
     let otherSkills = [
+        "Git",
         "GitHub",
         "GitLab",
+        "ADO",
         "Jira",
+        "CI/CD",
         "UMLs",
         "Flowcharts",
         "Wireframes"

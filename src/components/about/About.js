@@ -26,11 +26,11 @@ function About() {
                             </p>
                             <p>
                                 Some of my favorite programming languages and technologies that I have been recently working
-                                with include Java, TypeScript, and Angular. Besides programming, I spend my free time 
-                                researching and getting involved in cryptocurrency.
+                                with include Java, TypeScript, Angular, Golang, CosmosSDK, Rust, and CosmWasm. In addition to
+                                programming, I spend my free time researching and getting involved in cryptocurrency.
                             </p>
                             <p>
-                                Actively, I am seeking an opportunity to not only gain hands-on experience in the software industry
+                                I am actively seeking an opportunity to not only gain hands-on experience in the software industry
                                 and expand upon my technical skillset, but to also provide meaningful value to a development team.
                                 Please feel free to contact me if you'd like to discuss potential collaboration or job opportunities.
                             </p>

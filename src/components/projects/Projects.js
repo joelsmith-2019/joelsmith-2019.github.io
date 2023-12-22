@@ -5,6 +5,24 @@ export default function Projects() {
     // Array of all projects
     let projects = [
         {
+            startDate: "April 2023",
+            endDate: "May 2023",
+            title: "Jordle",
+            description: "An open-source web application based off the popular game, Wordle.",
+            role: "Developer",
+            isSideProject: true,
+            points: [
+                "Developed and launched Jordle, an innovative word game application that builds upon the popular Wordle concept",
+                "Introduced diverse game modes such as daily challenges, unlimited play, custom games, and a build-your-own feature for users to create and share their custom games",
+                "Leveraged multiple backend APIs to facilitate word validation, emphasizing a strong understanding of API integration and data validation processes",
+                "Demonstrated proficiency in designing responsive user interfaces by implementing adaptive layouts for Jordle, ensuring optimal user experience across various device types and screen sizes"
+            ],
+            skills: ["JavaScript", "TypeScript", "React", "Git", "GitHub", "CI/CD"],
+            github: "https://github.com/joelsmith-2019/jordle",
+            website: "https://jordle.joelsmith.io",
+            demo: "",
+        },
+        {
             startDate: "September 2022",
             endDate: "April 2023",
             title: "Senior Capstone Project",
