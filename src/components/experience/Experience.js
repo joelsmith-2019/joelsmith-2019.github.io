@@ -5,8 +5,25 @@ export default function Experience() {
     // Array of all projects
     let projects = [
         {
-            startDate: "August 2023",
+            startDate: "March 2024",
             endDate: "Present",
+            title: "Strangelove",
+            description: "A blockchain development firm, lab, and validator, that builds software to supercharge the growth and security of the Interchain.",
+            role: "Software Engineer",
+            isSideProject: false,
+            points: [
+                "Reduced third-party API calls for one of our client services by 90% within 5 weeks of joining the team, significantly lowering runtime costs and enhancing performance",
+                "Standardized CI/CD pipelines across all projects, simplifying setup and maintenance processes",
+                "Performed Cosmos chain upgrades and maintenance, ensuring clients have access to the latest features and enhanced security",
+            ],
+            skills: ["Golang", "CosmosSDK", "Protobuf", "Git", "GitHub", "Docker", "CI/CD"],
+            github: "https://github.com/strangelove-ventures",
+            website: "https://strange.love",
+            demo: "",
+        },
+        {
+            startDate: "August 2023",
+            endDate: "March 2024",
             title: "Juno Network",
             description: "A decentralized, open-source, and community-driven blockchain network.",
             role: "Software Developer",
@@ -24,7 +41,7 @@ export default function Experience() {
         },
         {
             startDate: "May 2023",
-            endDate: "Present",
+            endDate: "March 2024",
             title: "American Airlines",
             description: "A leading international airline company.",
             role: "Software Developer",
